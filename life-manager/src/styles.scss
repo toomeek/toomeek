@@ -8,38 +8,3 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   justify-content: center;
 }
 
-.mat-button-toggle-group.mat-button-toggle-group {
-  display: flex;
-}
-
-mat-button-toggle-group {
-  box-shadow: none;
-  padding: 50 50px;
-}
-
-
-mat-button-toggle {
-    border: 1px rgba(5, 5, 5, 0) solid !important;
-    margin-top: 5px !important;
-    padding: 0 5px !important;
-    z-index: 3 !important;
-}
-
-mat-button-toggle:hover {
-    border: 1px #000 solid !important;
-    background-color:beige !important;
-    border-radius: 5px !important;
-}
-
-.mat-button-toggle-checked {
-	  box-shadow: 3px #000 !important;
-    border: 1px #000 solid !important;
-    border-radius: 5px !important;
-    background-color: beige !important;
-    color: indigo;
-}
-
-.mat-button-toggle-input {
-    background-color: none !important;
-    padding-left: 32px !important;
-}

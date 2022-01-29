@@ -12,7 +12,8 @@
         "sourceType": "module"
     },
     "plugins": [
-        "@typescript-eslint"
+      "@typescript-eslint",
+      "eslint-plugin-html"
     ],
     "rules": {
       "new-cap": 0,
