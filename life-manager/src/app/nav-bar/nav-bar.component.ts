@@ -6,13 +6,13 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core'
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent {
-  selectedVal = 'home'
+  selectedVal = ''
 
   @Output()
   public valueSelected: EventEmitter<string> = new EventEmitter()
 
   @Input()
-  public modulList:string[][] = []
+  public modulList: string[][] = []
 
   navChanged (selectedValue: string) {
     this.selectedVal = selectedValue

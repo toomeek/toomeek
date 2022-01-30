@@ -1,6 +1,6 @@
 <div class="container">
   <app-nav-bar [modulList]="modules" (valueSelected)="printSelectedValue($event)"></app-nav-bar>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
 </div>
-<ul>
-  <li *ngFor="let item of items">{{item}}</li>
-</ul>
