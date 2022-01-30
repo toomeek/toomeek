@@ -1,4 +1,4 @@
-<mat-button-toggle-group name="module" aria-label="Favorite Color" (change)="navChanged($event.value)">
+<mat-button-toggle-group name="module" aria-label="Navigation" (change)="navChanged($event.value)">
   <mat-button-toggle *ngFor="let item of modulList" value="{{item[0]}}">
     <div>{{item[0]}}</div>
     <mat-icon>{{item[1]}}</mat-icon>
