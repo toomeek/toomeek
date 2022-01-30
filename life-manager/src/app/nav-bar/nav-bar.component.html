@@ -1,10 +1,6 @@
-<mat-button-toggle-group name="module" aria-label="Favorite Color">
-  <mat-button-toggle value="home"><mat-icon>home</mat-icon></mat-button-toggle>
-  <mat-button-toggle value="garden"><mat-icon>cloud</mat-icon></mat-button-toggle>
-  <mat-button-toggle value="friends"><mat-icon>accessibility_new</mat-icon></mat-button-toggle>
-  <mat-button-toggle value="car"><mat-icon>commute</mat-icon></mat-button-toggle>
-  <mat-button-toggle value="finances"><mat-icon>credit_card</mat-icon></mat-button-toggle>
-  <mat-button-toggle value="travels"><mat-icon>flight_takeoff</mat-icon></mat-button-toggle>
-  <mat-button-toggle value="shopping"><mat-icon>add_shopping_cart</mat-icon></mat-button-toggle>
+<mat-button-toggle-group name="module" aria-label="Favorite Color" (change)="navChanged($event.value)">
+  <mat-button-toggle *ngFor="let item of modulList" value="{{item[0]}}">
+    <div>{{item[0]}}</div>
+    <mat-icon>{{item[1]}}</mat-icon>
+  </mat-button-toggle>
 </mat-button-toggle-group>
-

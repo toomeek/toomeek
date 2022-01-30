@@ -1,13 +1,21 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core'
 
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
-  styleUrls: ['./nav-bar.component.scss'],
+  styleUrls: ['./nav-bar.component.scss']
 })
-export class NavBarComponent implements OnInit {
-  constructor() { }
+export class NavBarComponent {
+  selectedVal = 'home'
 
-  ngOnInit(): void {
+  @Output()
+  public valueSelected: EventEmitter<string> = new EventEmitter()
+
+  @Input()
+  public modulList:string[][] = []
+
+  navChanged (selectedValue: string) {
+    this.selectedVal = selectedValue
+    this.valueSelected.emit(selectedValue)
   }
 }

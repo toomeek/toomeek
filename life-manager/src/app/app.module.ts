@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common'
 import { NgModule } from '@angular/core'
 import { MatButtonToggleModule } from '@angular/material/button-toggle'
 import { MatIconModule } from '@angular/material/icon'
@@ -15,6 +16,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component'
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    CommonModule,
     MatButtonToggleModule,
     MatIconModule
   ],
